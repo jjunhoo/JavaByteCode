@@ -15,9 +15,10 @@
   - 빨간색 : 테스트 되지 않은 라인
   - 초록색 : 테스트 된 라인
   - 특정 커버리지 비율을 넘기지 못하면 빌드를 실패시킬 수 있음
-  ```` profile
+  ```` XML
   // JaCoCo - 특정 커버리지 비율을 넘기지 못하면 빌드에 실패하도록 설정하는 방법
-  // 콘솔에 ERROR 로그 찍힘 - Failed to execute goal org.jacoco:jacoco-maven-plugin:0.8.4:check(jacoco-check)
+  // 콘솔에 아래 주석과 같은 ERROR 로그 찍힘
+  // Failed to execute goal org.jacoco:jacoco-maven-plugin:0.8.4:check(jacoco-check)
   // on project classloader-sample: Coverage checks have not benn met. See log for details -> [Help 1]
   <execution>
     <id>jacoco-check</id>
