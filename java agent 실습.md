@@ -48,10 +48,14 @@ public class MasulsaAgent {
 ````
 
 [ 프로젝트 패키징 ]
+````XML
 mvn clean package
+````
 
 [ java agent 설정 ]
+````XML
 VM options : -javaagent: /Users/keesun/workspace/MasulsaJavaAgent/target/MasulsaAgent-1.0-SNAPSHOT.jar
+````
 
 [ Moja.java 클래스 실행 ]
 ````java
