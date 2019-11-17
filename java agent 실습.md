@@ -5,8 +5,9 @@
 public class MasulsaAgent {
 	public static void premain(String agentArgs, Instrumentation inst) {
 		new AgentBuilder.Default()
-						.type(ElementMatchers.any())
-						.transform((builder, typeDescription, classLoader, javaModule) -> builder.method(named("pullOut")).intercept(FixedValue.value("Rabbit!"))).installOn(inst);
+				.type(ElementMatchers.any())
+				.transform((builder, typeDescription, classLoader, javaModule) -> 			   		
+				builder.method(named("pullOut")).intercept(FixedValue.value("Rabbit!"))).installOn(inst);
 	}
 }
 ````
