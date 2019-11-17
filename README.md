@@ -15,7 +15,7 @@
   - 빨간색 : 테스트 되지 않은 라인
   - 초록색 : 테스트 된 라인
   - 특정 커버리지 비율을 넘기지 못하면 빌드를 실패시킬 수 있음
-  ```` maven
+  ```` profile
   // JaCoCo - 특정 커버리지 비율을 넘기지 못하면 빌드에 실패하도록 설정하는 방법
   // 콘솔에 ERROR 로그 찍힘 - Failed to execute goal org.jacoco:jacoco-maven-plugin:0.8.4:check(jacoco-check)
   // on project classloader-sample: Coverage checks have not benn met. See log for details -> [Help 1]
@@ -48,7 +48,7 @@
   3. 실행한 라인과 실행되지 않은 라인을 비교 
 
 ```` java
-// Moin 클래스 소스 코드
+// Moim 클래스 소스 코드
 public class Moin { 
    int maxNmberOfAttendess; // 최대 참가자수 
    int numberOfEnrollment;    // 현재 참가자수
@@ -68,7 +68,7 @@ public class Moin {
 ```` 
 
 ```` java
-// Moin 클래스 테스트 코드
+// Moim 클래스 테스트 코드
 public class MoinTest {
   @Test
   public void isFull() {
